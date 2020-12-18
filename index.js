@@ -4,7 +4,6 @@
  * @param {HTMLElement} htmlElement
  */
 export default htmlElement => {
-  console.log('htmlElement', htmlElement)
   htmlElement.addEventListener('paste', e => {
     e.preventDefault();
 
