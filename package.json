@@ -1,0 +1,26 @@
+{
+  "name": "paste-as-plain-text",
+  "version": "1.0.0",
+  "description": "Switches a html contenteditable element to \"paste as plain text only\" mode.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavlutovr/paste-as-plain-text.git"
+  },
+  "keywords": [
+    "html",
+    "contenteditable",
+    "javascript",
+    "paste",
+    "plain"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mavlutovr/paste-as-plain-text/issues"
+  },
+  "homepage": "https://github.com/mavlutovr/paste-as-plain-text#readme"
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo of paste as plain text to contenteditable</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 50px;
+    }
+
+    .textarea {
+      border: 1px solid black;
+      width: 400px;
+      max-width: 100%;
+      min-height: 60px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    p {
+      color: #777;
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Text with styles -->
+  <p><span href="#" style="color: red; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Try to copy this text and paste below.</span></p>
+
+  <!-- Standard paste mode -->
+  <p>"Standard paste" mode:</p>
+  <div class="textarea" contenteditable="true"></div>
+
+  <!-- Paste as plain text mode -->
+  <p>"Paste as plain text" mode:</p>
+  <div id="js-textarea" class="textarea" contenteditable="true"></div>
+
+  <script src="./index.js" type="module"></script>
+  <script type="module">
+    import adaptiveSwapper from './index.js';
+
+    adaptiveSwapper(
+      document.getElementById('js-textarea')
+    );
+  </script>
+</body>
+</html>
