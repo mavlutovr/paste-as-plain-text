@@ -1,6 +1,6 @@
 {
   "name": "paste-as-plain-text",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Switches a html contenteditable element to \"paste as plain text only\" mode.",
   "main": "index.js",
   "scripts": {
