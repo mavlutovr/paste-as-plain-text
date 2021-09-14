@@ -8,7 +8,7 @@ export default htmlElement => {
     e.preventDefault();
 
     let text = (e.originalEvent || e).clipboardData.getData('text/plain');
-    text = text.replace(/\n/g, '<BR>');
+    text = text.replace(/(\r\n|\n\r|\r|\n)/g, '<br>');
     document.execCommand("insertHTML", false, text);
   });
 };
