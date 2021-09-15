@@ -37,13 +37,13 @@
 
   <!-- Paste as plain text mode -->
   <p>"Paste as plain text" mode:</p>
-  <div id="js-textarea" class="textarea" contenteditable="true"></div>
+  <div id="js-textarea" class="textarea" contenteditable="true" data-log="1"></div>
 
   <script src="./index.js" type="module"></script>
   <script type="module">
-    import adaptiveSwapper from './index.js';
+    import pasteAsPlainText from './index.js';
 
-    adaptiveSwapper(
+    pasteAsPlainText(
       document.getElementById('js-textarea')
     );
   </script>
