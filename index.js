@@ -3,7 +3,7 @@
  * 
  * @param {HTMLElement} htmlElement
  */
-export default htmlElement => {
+export default (htmlElement, onText) => {
   console.log('htmlElement', htmlElement)
   htmlElement.addEventListener('paste', e => {
     e.preventDefault();
@@ -14,7 +14,9 @@ export default htmlElement => {
       console.log('text before', text);
     }
 
-    text = text.replace(/(\r\n|\n\r|\r|\n)/g, '<br>');
+	  if (onText) text = onText(text)
+
+	  text = text.replace(/(\r\n|\n\r|\r|\n)/g, '<br>');
 
     if (htmlElement.dataset.log) {
       console.log('text after', text);
