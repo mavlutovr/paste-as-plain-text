@@ -1,10 +1,11 @@
 /**
  * Turn on past just as plain text
- * 
+ *
  * @param {HTMLElement} htmlElement
+ * @param {function} onText
  */
 export default (htmlElement, onText) => {
-  console.log('htmlElement', htmlElement)
+  // console.log('htmlElement', htmlElement)
   htmlElement.addEventListener('paste', e => {
     e.preventDefault();
 
